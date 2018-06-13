@@ -1,0 +1,123 @@
+.wrapper{
+    height: 100%;
+}
+.swiper-slide{
+    width: 100%;
+}
+.swiper-slide img{
+    width: 100%;
+    height: auto;
+}
+.swiper-pagination-bullet{
+    background: #8d8c92;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background: #d43a30;
+}
+.menu{
+    height: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    flex: 1;
+    text-align: center;
+}
+.menu ul li span{
+    display: block;
+    padding-top: 1.4rem;
+}
+.menu ul li:nth-child(1){
+    background: url(../images/wucx-icon-01.png) center 13px no-repeat;
+    background-size: 52px auto;
+}
+.menu ul li:nth-child(2){
+    background: url(../images/wucx-icon-02.png) center 13px no-repeat;
+    background-size: 52px auto;
+}
+.menu ul li:nth-child(3){
+    background: url(../images/wucx-icon-03.png) center 13px no-repeat;
+    background-size: 52px auto;
+}
+.menu ul li:nth-child(4){
+    background: url(../images/wucx-icon-04.png) center 13px no-repeat;
+    background-size: 52px auto;
+}
+.list ul li .list-wrapper span{
+    position: relative;
+    display: block;
+    padding-left: .18rem;
+    margin-bottom: .28rem;
+    margin-top: .28rem;
+    font-size: 17px;
+    height: .4rem;
+    line-height: .4rem;
+}
+.list ul li .list-wrapper .icon-my{
+    font-size: 14px;
+    padding-left: .1rem;
+}
+.list ul li .list-wrapper .list-music{
+    display: flex;
+    padding-bottom: .32rem;
+}
+.list ul li .list-wrapper .list-music a{
+    display: block;
+    flex: 1;
+}
+.list ul li .list-wrapper .list-music a:nth-child(2){
+    margin: 0 .06rem;
+}
+.list ul li .list-wrapper .list-music a img{
+    width: 100%;
+    height: auto;
+}
+.list ul li .list-wrapper .list-music a p{
+    overflow: hidden;
+    padding: .12rem .04rem 0 .12rem;
+    line-height: 1.2;
+    font-size: 13px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.list ul li .list-wrapper .list-article a{
+    position: relative;
+    display: block;
+    display: flex;
+    height: 1.6rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 3px;
+}
+.list ul li .list-wrapper .list-article a .content{
+    flex: 1;
+    padding: .2rem .8rem 0 .3rem;
+}
+.list ul li .list-wrapper .list-article a .content img{
+    position: absolute;
+    left: .3rem;
+    top: .25rem;
+}
+.list ul li .list-wrapper .list-article a .content p{
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.list ul li .list-wrapper .list-article a .content span{
+    position: absolute;
+    left: .15rem;
+    top: .8rem;
+    font-size: 12px;
+    color: #aaa;
+}
+.list ul li .list-wrapper .list-article a strong{
+    width: 2.4rem;
+    height: 1.6rem;
+}
+.list ul li .list-wrapper .list-article a strong img{
+    width: 100%;
+    height: 100%;
+}

@@ -3,15 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>网易云音乐</title>
     <script>
         var deviceWidth = document.documentElement.clientWidth;
         if (deviceWidth > 750) deviceWidth = 750;
         document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
     </script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
 </head>
 <body>
-    
+    <section class="wrapper">
+        <header class="header">
+        </header>
+        <main class="main">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img data-src="./assets/images/wucx-01.jpg" alt="" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./assets/images/wucx-02.jpg" alt="" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./assets/images/wucx-03.jpg" alt="" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./assets/images/wucx-04.jpg" alt="" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./assets/images/wucx-05.jpg" alt="" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./assets/images/wucx-06.jpg" alt="" class="swiper-lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <span>私人FM</span>
+                    </li>
+                    <li>
+                        <span>每日推荐</span>
+                    </li>
+                    <li>
+                        <span>歌单</span>
+                    </li>
+                    <li>
+                        <span>排行榜</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="list-wrapper list-wrapper-music">
+                            <span wcid="0">推荐<strong class="icon-chevron-right icon-my"></strong></span>
+                            <!-- <div class="list-music">
+                                <a href="">
+                                    <img src="./server/img/wucx-music-01.jpg" alt="">
+                                    <p>人间太吵了 你来我心里吧</p>
+                                </a>
+                                <a href="">
+                                    <img src="./server/img/wucx-music-02.jpg" alt="">
+                                    <p>我爱你，第一句是假的，第二句也是假的</p>
+                                </a>
+                                <a href="">
+                                    <img src="./server/img/wucx-music-03.jpg" alt="">
+                                    <p>我爱你，第一句是假的，第二句也是假的</p>
+                                </a>
+                            </div>
+                            <div class="list-music">
+                                <a href="">
+                                    <img src="./server/img/wucx-music-04.jpg" alt="">
+                                    <p>我爱你，第一句是假的，第二句也是假的</p>
+                                </a>
+                                <a href="">
+                                    <img src="./server/img/wucx-music-05.jpg" alt="">
+                                    <p>我爱你，第一句是假的，第二句也是假的</p>
+                                </a>
+                                <a href="">
+                                    <img src="./server/img/wucx-music-06.jpg" alt="">
+                                    <p>我爱你，第一句是假的，第二句也是假的</p>
+                                </a>
+                            </div> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-wrapper list-wrapper-music">
+                            <span wcid="1">华语<strong class="icon-chevron-right icon-my"></strong></span>
+                            <!-- <div class="list-music">
+                                <a href="">
+                                    <img src="./server/img/wucx-music-07.jpg" alt="">
+                                    <p>我爱你，第一句是假的，第二句也是假的</p>
+                                </a>
+                                <a href="">
+                                    <img src="./server/img/wucx-music-08.jpg" alt="">
+                                    <p>我爱你，第一句是假的，第二句也是假的</p>
+                                </a>
+                                <a href="">
+                                    <img src="./server/img/wucx-music-09.jpg" alt="">
+                                    <p>我爱你，第一句是假的，第二句也是假的</p>
+                                </a>
+                            </div>
+                            <div class="list-music">
+                                <a href="">
+                                    <img src="./server/img/wucx-music-10.jpg" alt="">
+                                    <p>我爱你，第一句是假的，第二句也是假的</p>
+                                </a>
+                                <a href="">
+                                    <img src="./server/img/wucx-music-11.jpg" alt="">
+                                    <p>我爱你，第一句是假的，第二句也是假的</p>
+                                </a>
+                                <a href="">
+                                    <img src="./server/img/wucx-music-12.jpg" alt="">
+                                    <p>我爱你，第一句是假的，第二句也是假的</p>
+                                </a>
+                            </div> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-wrapper list-wrapper-music">
+                            <span wcid="2">欧美<strong class="icon-chevron-right icon-my"></strong></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-wrapper list-wrapper-music">
+                            <span wcid="3">韩国<strong class="icon-chevron-right icon-my"></strong></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-wrapper list-wrapper-music">
+                            <span wcid="4">日本<strong class="icon-chevron-right icon-my"></strong></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-wrapper">
+                            <span>精选专栏<strong class="icon-chevron-right icon-my"></strong></span>
+                            <div class="list-article">
+                                <a href="">
+                                    <div class="content">
+                                        <img src="./assets/images/wucx-font-01.jpg" alt="">
+                                        <h>&nbsp &nbsp &nbsp &nbsp王啸坤：那些你们喜欢的不喜欢的我都喜欢的</h>
+                                        <span>阅读7618</span>
+                                    </div>
+                                    <strong class="img-wrapper">
+                                        <img src="./server/img/wucx-article-01.jpg" alt="">
+                                    </strong>
+                                </a>
+                                <a href="">
+                                    <div class="content">
+                                        <img src="./assets/images/wucx-font-01.jpg" alt="">
+                                        <h>&nbsp &nbsp &nbsp &nbsp《SLAM DUNK》里存在着关于我们青春的一切</h>
+                                        <span>阅读81085</span>
+                                    </div>
+                                    <strong class="img-wrapper">
+                                        <img src="./server/img/wucx-article-02.jpg" alt="">
+                                    </strong>
+                                </a>
+                                <a href="">
+                                    <div class="content">
+                                        <img src="./assets/images/wucx-font-01.jpg" alt="">
+                                        <h>&nbsp &nbsp &nbsp &nbsp奥黛丽赫本：她远去带走一个时代，一转身便是一个世纪</h>
+                                        <span>阅读23459</span>
+                                    </div>
+                                    <strong class="img-wrapper">
+                                        <img src="./server/img/wucx-article-03.jpg" alt="">
+                                    </strong>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </section>
+
+    <script src="./assets/js/swiper-4.2.6.min.js"></script>
+    <script src="./assets/js/jquery-1.10.2.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <!-- <script src="./server/index-data.json"></script> -->
+    <script>
+        //轮播图
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            lazy: {
+                loadPrevNext: true,
+            },
+        });
+
+        // 页面加载
+        var oLoading = new indexLoading({
+            $wrapperList: $('.list > ul > li .list-wrapper-music'),
+            callback(){
+
+            }
+        })
+        oLoading.install();
+
+        //列表页面跳转及传参
+        $(function(){
+            var listId=0;
+            $(".list > ul > li .list-wrapper").on("click", "span", function(){
+                listId=$(this).attr('wcid');
+                listJump();
+            });
+            function listJump(){
+                url = "b.html?list="+listId;
+                window.location.href = url;
+            }
+        });
+        
+        //播放页面跳转和传参
+        
+    </script>
 </body>
 </html>
