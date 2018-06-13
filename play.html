@@ -75,14 +75,33 @@
 <script src="./assets/js/jquery-1.10.2.js"></script>
 <script src="./assets/js/musicOption.js"></script>
 <script>
-    
+    function UrlSearch() { //获取url后参数
+        var name,value;
+        var str=location.href; //取得整个地址栏
+        var num=str.indexOf("?")
+        str=str.substr(num+1); //取得所有参数   stringvar.substr(start [, length ]
+
+        var arr=str.split("&"); //各个参数放到数组里
+            console.log(arr)
+        for(var i=0;i < arr.length;i++){
+                num=arr[i].indexOf("=");
+                if(num>0){
+                    name=arr[i].substring(0,num);
+                    value=arr[i].substr(num+1);
+                    this[name]=value;
+                }
+        }
+    }   
+    var listId=UrlSearch()["listId"]; // 第一个参数listId,代表歌单号
+    var musicId=UrlSearch()["musicId"]; // 第二个参数misicId,代表歌曲序号
+
     // console.log(document.getElementsByClassName("play_section")[0])
     var oMusic = new musicFn({
-        $mode:$(".play_section")[0],
-        listIndex:1,    
-        musicIndex:1,
+        $mode:$(".play_section")[0],  //总框架play_section
+        listIndex:1,                  //歌单序号
+        musicIndex:1,                 //歌曲序号
 
-        circle: document.getElementsByClassName('circle')[0],
+        circle: document.getElementsByClassName('circle')[0],       
         leftArrow: document.getElementsByClassName('left')[0], 
         rightArrow: document.getElementsByClassName('right')[0], 
         round:document.getElementsByClassName('round')[0],

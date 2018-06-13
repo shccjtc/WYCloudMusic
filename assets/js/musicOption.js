@@ -58,6 +58,8 @@ var musicFn=(function($,undefined){
             
 
         },
+
+        //布置音乐函数，动态添加css
         disPlayMusic:function(data){
             _this=this;
             var strhead="<h4>"+this.data.title+"</h4><h5>"+this.data.author+"</h5>"
@@ -89,6 +91,7 @@ var musicFn=(function($,undefined){
       
         },
 
+        //计算角度
         calDuration(duration){
             duration=parseInt(duration);
             var min=parseInt(duration/60);
@@ -97,7 +100,9 @@ var musicFn=(function($,undefined){
             return min+":"+sec
         },
 
-        getMusic:function(){
+
+        //根据歌单和音乐号从php歌单中取得歌曲id，并根据歌曲id从歌曲json中取得相应歌曲的data，保存入this.data中
+        getMusic:function(){ //还未经过测试，有服务器的可以把代码放到服务器下测试，有问题告诉我
             _this=this;
             $.ajax({
                 type:'GET',
@@ -150,6 +155,8 @@ var musicFn=(function($,undefined){
             // }
 
         },
+
+        //根据歌曲id从json中获取歌曲data并返回
         searchMusic:function(id){
             $.ajax({
                 type:'GET',
@@ -168,6 +175,7 @@ var musicFn=(function($,undefined){
 
 
 
+        //设置进度条移动计时器
         setPlayTimer:function(){
             var _this=this;
             this.playTimer=setInterval(function(){
@@ -178,6 +186,7 @@ var musicFn=(function($,undefined){
         },
 
 
+        //音乐播放
         musicOn:function(){
             var _this=this;
             this.flag = 1;    
@@ -190,6 +199,8 @@ var musicFn=(function($,undefined){
             
             
         },
+
+        //音乐暂停
         musicPause:function(){
             this.flag = 0;
             $(this.play).removeClass('icon-controller-paus');
@@ -198,6 +209,8 @@ var musicFn=(function($,undefined){
             this.rotate();
             clearInterval(this.playTimer);
         },
+
+        //绑定播放键功能
         bindPlay:function(){
             
             var  _this = this;
@@ -214,6 +227,8 @@ var musicFn=(function($,undefined){
               })
          },
  
+
+         //图片旋转功能
          rotate:function(){
              var _this = this;
              console.log(_this)
@@ -232,6 +247,7 @@ var musicFn=(function($,undefined){
            },
  
 
+        //绑定进度条点击跳转功能
         bindLine: function(){
             // $(this.line).on('click', function(){
             //     console.log(0)
@@ -247,6 +263,7 @@ var musicFn=(function($,undefined){
         },
         
 
+        //绑定小圆点拖拽功能
         bindRound: function(){
             var objThis = this;
             this.round.ontouchstart = function(ev){
@@ -295,21 +312,26 @@ var musicFn=(function($,undefined){
         },
 
 
-
+        //绑定左切歌功能
         bindLeft:function(){
             var  _this = this;
             $(this.leftArrow).on('click', function(){
                 _this.moveLeft();
              })
         },
+
+        //绑定右切歌功能
         bindRight:function(){
             var  _this = this;
             $(this.rightArrow).on('click', function(){
                 _this.moveRight();
              })
         },
+
+        //左切歌
         moveLeft:function(){
-            if(--this.musicIndex<=0) this.musicIndex=3;
+            // if(--this.musicIndex<=0) this.musicIndex=3;
+            if(--this.musicIndex<=0) this.musicIndex=this.length;
             clearInterval(this.timer);
             clearInterval(this.playTimer);
             this.getMusic();
@@ -320,7 +342,8 @@ var musicFn=(function($,undefined){
 
         },
         moveRight:function(){
-            if(++this.musicIndex>3) this.musicIndex=1;
+            // if(++this.musicIndex>3) this.musicIndex=1;
+            if(++this.musicIndex>this.length) this.musicIndex=1;
             clearInterval(this.timer);
             clearInterval(this.playTimer);
             this.getMusic();
