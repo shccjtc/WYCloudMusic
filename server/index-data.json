@@ -1,0 +1,12 @@
+{
+    "err":1,
+    "message":"",
+    "info":[
+        {"id":1,"img_src":"/WYCloudMusic/server/img/成都.jpg","title":"成都","author": "赵雷"},
+        {"id":2,"img_src":"/WYCloudMusic/server/img/有没有那么一首歌.jpg","title":"有没有那么一首歌","author": "周华健"},
+        {"id":3,"img_src":"/WYCloudMusic/server/img/漂洋过海来看你.jpg","title":"漂洋过海来看你","author": "周深"},
+        {"id":4,"img_src":"/WYCloudMusic/server/img/七里香.jpg","title":"七里香","author": "周杰伦"},
+        {"id":5,"img_src":"/WYCloudMusic/server/img/七里香.jpg","title":"困兽之斗","author": "周杰伦"},
+        {"id":6,"img_src":"/WYCloudMusic/server/img/七里香.jpg","title":"乱舞春秋","author": "周杰伦"}
+    ]
+}

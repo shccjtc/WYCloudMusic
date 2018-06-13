@@ -27,17 +27,10 @@ var indexLoading = (function(){
             })
             // console.log(9)
         },
-        // bindInsert: function(){
-        //     for(var i=0; i<this.wrapperList.length; i++){
-        //         this.getData(function(list){
-        //             this.insertDom(list)
-        //         })
-        //     }
-        // },
         getData: function(callback){
             $.ajax({
                 type: 'GET',
-                url: 'http://127.0.0.1/wy-music-demo/server/index-data.json',
+                url: 'http://127.0.0.1/WYCloudMusic/server/index-data.json',
                 // url: '../server/index-data.json',
                 data: {
                     // classid: 1,
@@ -45,7 +38,7 @@ var indexLoading = (function(){
                 dataType: 'json',
             })
             .done(function(data){
-                console.log(data)
+                // console.log(data)
                 callback && callback(data.info);
             }).fail(function(err){
                 console.log(err)
@@ -55,34 +48,10 @@ var indexLoading = (function(){
             var str = '<div class="list-music">';
             for (var i = row; i < row+3; i++){
                 var tmp = [
-                    // '<div class="list-music">',
-                        '<a href="">',
-                            '<img src="'+ arr[i].img_src +'" alt="">',
-                            '<p>'+ arr[i].title +'</p>',
-                        '</a>',
-                    //     '<a href="">',
-                    //         '<img src="'+ arr[i].img_src +'" alt="">',
-                    //         '<p>'+ arr[i].title +'</p>',
-                    //     '</a>',
-                    //     '<a href="">',
-                    //         '<img src="'+ arr[i].img_src +'" alt="">',
-                    //         '<p>'+ arr[i].title +'</p>',
-                    //     '</a>',
-                    // '</div>',
-                    // '<div class="list-music">',
-                    //     '<a href="">',
-                    //         '<img src="'+ arr[i].img_src +'" alt="">',
-                    //         '<p>'+ arr[i].title +'</p>',
-                    //     '</a>',
-                    //     '<a href="">',
-                    //         '<img src="'+ arr[i].img_src +'" alt="">',
-                    //         '<p>'+ arr[i].title +'</p>',
-                    //     '</a>',
-                    //     '<a href="">',
-                    //         '<img src="'+ arr[i].img_src +'" alt="">',
-                    //         '<p>'+ arr[i].title +'</p>',
-                    //     '</a>',
-                    // '</div>'
+                    '<a href="" musicid="'+ arr[i].id +'">',
+                        '<img src="'+ arr[i].img_src +'" alt="">',
+                        '<p>'+ arr[i].title + '--' + arr[i].author + '</p>',
+                    '</a>',
                 ];
                 str += tmp.join('');
                 tmp = null; // 考虑js变量内存释放的问题
