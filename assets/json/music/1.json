@@ -1,0 +1,8 @@
+{
+    "id": "1", 
+    "url": "./server/media/成都.mp3", 
+    "img_src": "./server/img/pic-01.jpg", 
+    "author": "赵雷", 
+    "title": "成都",
+    "album":"空"
+}

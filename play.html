@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网易云音乐</title>
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    </script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/play.css">
+</head>   
+<body>  
+
+<div class="play_section">
+    <div class="play_head">
+        
+        <a href="#"><p class="icon-chevron-thin-right"></p></a>
+        <a href="#"><span class="icon-chevron-thin-left"></span></a>
+        <a href="#"><p class="Icon icon-share"></p></a>
+            
+    </div>
+    <div class="main">
+        <div class="circle">
+            <div class="circle_">
+                    <img src="./assets/images/circle.png" alt="">
+            </div>
+           
+            <div class="small-circle">
+
+            </div>
+        </div>
+        <div class="line">
+            <div class="round">
+                <div class="red">
+                </div>
+            </div>
+        </div>
+        <div class="left-time"></div>
+        <div class="right-time"></div>
+  
+    </div>
+    <div class="footer">
+        <ul>
+            <a href="#">
+                <li class="left icon-previous2"></li>
+            </a>
+            <a href="#">
+                <li class="play icon-play3"></li>
+            </a>
+            <a href="#">
+                <li class="right icon-next2"></li>
+            </a>
+        </ul>
+    </div>
+    <div class="musicList">
+            <!-- <ul>
+                <li>
+                    <audio src="./server/media/成都.mp3"></audio>
+                </li>
+                <li>
+                    <audio src="./server/media/有没有那么一首歌.mp3"></audio>
+                </li>
+                <li>
+                    <audio src="./server/media/漂洋过海来看你.mp3"></audio>
+                </li>
+            </ul> -->
+        </div>
+</div>
+<script src="./assets/js/jquery-1.10.2.js"></script>
+<script src="./assets/js/musicOption.js"></script>
+<script>
+    
+    // console.log(document.getElementsByClassName("play_section")[0])
+    var oMusic = new musicFn({
+        $mode:$(".play_section")[0],
+        listIndex:1,    
+        musicIndex:1,
+
+        circle: document.getElementsByClassName('circle')[0],
+        leftArrow: document.getElementsByClassName('left')[0], 
+        rightArrow: document.getElementsByClassName('right')[0], 
+        round:document.getElementsByClassName('round')[0],
+        line:document.getElementsByClassName('line')[0],
+        leftTime:document.getElementsByClassName('left-time')[0],
+        rightTime:document.getElementsByClassName('right-time')[0],
+        play:document.getElementsByClassName('play')[0],
+        musicList: document.querySelectorAll('.musicList'),
+        autoPlay:true,
+        flag:0,
+        evType: 'mouseover',
+        callback: function(v){
+            console.log(v)
+        }
+    });
+    oMusic.install();
+</script>
+
+    
+</body>
+</html>

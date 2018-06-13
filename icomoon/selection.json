@@ -1,0 +1,427 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M637.542 231.219c22.835 22.323 24.627 53.402 0 80.691l-191.846 200.090 191.846 200.090c24.627 27.29 22.835 58.419 0 80.589-22.784 22.323-61.286 20.89-82.688 0-21.402-20.787-230.502-240.384-230.502-240.384-11.418-11.11-17.152-25.702-17.152-40.294s5.734-29.184 17.152-40.397c0 0 209.101-219.494 230.502-240.384 21.402-20.941 59.904-22.323 82.688 0z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "chevron-left"
+        ],
+        "grid": 20
+      },
+      "attrs": [],
+      "properties": {
+        "id": 35,
+        "order": 5,
+        "prevSize": 20,
+        "code": 59650,
+        "name": "chevron-left2"
+      },
+      "setIdx": 0,
+      "setId": 6,
+      "iconIdx": 34
+    },
+    {
+      "icon": {
+        "paths": [
+          "M469.146 231.219c21.402 20.89 230.502 240.384 230.502 240.384 11.418 11.213 17.152 25.805 17.152 40.397s-5.734 29.184-17.152 40.294c0 0-209.101 219.597-230.502 240.384-21.402 20.89-59.904 22.323-82.688 0-22.835-22.221-24.627-53.299 0-80.589l191.846-200.090-191.846-200.090c-24.627-27.29-22.835-58.419 0-80.691 22.784-22.323 61.286-20.941 82.688 0z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "chevron-right"
+        ],
+        "grid": 20
+      },
+      "attrs": [],
+      "properties": {
+        "id": 36,
+        "order": 6,
+        "prevSize": 20,
+        "code": 59651,
+        "name": "chevron-right2"
+      },
+      "setIdx": 0,
+      "setId": 6,
+      "iconIdx": 35
+    },
+    {
+      "icon": {
+        "paths": [
+          "M711.219 891.802c13.722 13.926 13.722 36.301 0 50.125s-35.891 13.875-49.613 0l-400.896-404.89c-13.722-13.824-13.722-36.198 0-50.125l400.896-404.89c13.722-13.824 35.891-13.824 49.613 0 13.722 13.875 13.722 36.301 0 50.125l-365.619 379.853 365.619 379.802z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "chevron-thin-left"
+        ],
+        "grid": 20
+      },
+      "attrs": [],
+      "properties": {
+        "id": 42,
+        "order": 3,
+        "prevSize": 20,
+        "code": 59648,
+        "name": "chevron-thin-left"
+      },
+      "setIdx": 0,
+      "setId": 6,
+      "iconIdx": 41
+    },
+    {
+      "icon": {
+        "paths": [
+          "M678.4 512l-365.619-379.904c-13.722-13.824-13.722-36.198 0-50.125 13.722-13.824 35.891-13.824 49.613 0l400.896 404.89c13.722 13.875 13.722 36.301 0 50.125l-400.896 404.89c-13.722 13.875-35.891 13.824-49.613 0-13.722-13.773-13.722-36.198 0-50.125l365.619-379.75z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "chevron-thin-right"
+        ],
+        "grid": 20
+      },
+      "attrs": [],
+      "properties": {
+        "id": 43,
+        "order": 4,
+        "prevSize": 20,
+        "code": 59649,
+        "name": "chevron-thin-right"
+      },
+      "setIdx": 0,
+      "setId": 6,
+      "iconIdx": 42
+    },
+    {
+      "icon": {
+        "paths": [
+          "M765.901 234.035l-368.794 253.389c0 0-14.285 10.291-14.285 24.627s14.285 24.525 14.285 24.525l368.794 253.491c29.286 19.456 53.299 5.069 53.299-32.051v-491.981c0-37.222-24.013-51.61-53.299-32zM307.2 204.8h-51.2c-28.314 0-51.2 2.458-51.2 30.72v552.96c0 28.262 22.886 30.72 51.2 30.72h51.2c28.314 0 51.2-2.458 51.2-30.72v-552.96c0-28.262-22.886-30.72-51.2-30.72z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "controller-jump-to-start"
+        ],
+        "grid": 20
+      },
+      "attrs": [],
+      "properties": {
+        "id": 52,
+        "order": 8,
+        "prevSize": 20,
+        "code": 59652,
+        "name": "controller-jump-to-start"
+      },
+      "setIdx": 0,
+      "setId": 6,
+      "iconIdx": 51
+    },
+    {
+      "icon": {
+        "paths": [
+          "M626.893 487.424l-368.794-253.389c-29.286-19.61-53.299-5.222-53.299 32v491.981c0 37.12 24.013 51.507 53.299 32l368.794-253.491c0 0 14.285-10.189 14.285-24.474 0-14.336-14.285-24.627-14.285-24.627zM716.8 204.8h51.2c28.314 0 51.2 2.458 51.2 30.72v552.96c0 28.262-22.886 30.72-51.2 30.72h-51.2c-28.314 0-51.2-2.458-51.2-30.72v-552.96c0-28.262 22.886-30.72 51.2-30.72z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "controller-next"
+        ],
+        "grid": 20
+      },
+      "attrs": [],
+      "properties": {
+        "id": 53,
+        "order": 9,
+        "prevSize": 20,
+        "code": 59653,
+        "name": "controller-next"
+      },
+      "setIdx": 0,
+      "setId": 6,
+      "iconIdx": 52
+    },
+    {
+      "icon": {
+        "paths": [
+          "M768 153.6h-102.4c-28.314 0-51.2 2.458-51.2 30.72v655.36c0 28.262 22.886 30.72 51.2 30.72h102.4c28.314 0 51.2-2.458 51.2-30.72v-655.36c0-28.262-22.886-30.72-51.2-30.72zM358.4 153.6h-102.4c-28.314 0-51.2 2.458-51.2 30.72v655.36c0 28.262 22.886 30.72 51.2 30.72h102.4c28.314 0 51.2-2.458 51.2-30.72v-655.36c0-28.262-22.886-30.72-51.2-30.72z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "controller-paus"
+        ],
+        "grid": 20
+      },
+      "attrs": [],
+      "properties": {
+        "id": 54,
+        "order": 7,
+        "prevSize": 20,
+        "code": 59654,
+        "name": "controller-paus"
+      },
+      "setIdx": 0,
+      "setId": 6,
+      "iconIdx": 53
+    },
+    {
+      "icon": {
+        "paths": [
+          "M559.429 80.571c14.286-14.286 25.714-9.143 25.714 10.857v841.143c0 20-11.429 25.143-25.714 10.857l-405.714-405.714c-3.429-3.429-5.714-6.857-7.429-10.857v387.429c0 20-16.571 36.571-36.571 36.571h-73.143c-20 0-36.571-16.571-36.571-36.571v-804.571c0-20 16.571-36.571 36.571-36.571h73.143c20 0 36.571 16.571 36.571 36.571v387.429c1.714-4 4-7.429 7.429-10.857z"
+        ],
+        "width": 585.1428571428571,
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "step-backward"
+        ],
+        "defaultCode": 61512,
+        "grid": 14
+      },
+      "attrs": [],
+      "properties": {
+        "name": "step-backward",
+        "id": 72,
+        "order": 10,
+        "prevSize": 28,
+        "code": 61512
+      },
+      "setIdx": 1,
+      "setId": 5,
+      "iconIdx": 72
+    },
+    {
+      "icon": {
+        "paths": [
+          "M25.714 943.429c-14.286 14.286-25.714 9.143-25.714-10.857v-841.143c0-20 11.429-25.143 25.714-10.857l405.714 405.714c3.429 3.429 5.714 6.857 7.429 10.857v-387.429c0-20 16.571-36.571 36.571-36.571h73.143c20 0 36.571 16.571 36.571 36.571v804.571c0 20-16.571 36.571-36.571 36.571h-73.143c-20 0-36.571-16.571-36.571-36.571v-387.429c-1.714 4-4 7.429-7.429 10.857z"
+        ],
+        "width": 585.1428571428571,
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "step-forward"
+        ],
+        "defaultCode": 61521,
+        "grid": 14
+      },
+      "attrs": [],
+      "properties": {
+        "name": "step-forward",
+        "id": 80,
+        "order": 11,
+        "prevSize": 28,
+        "code": 61521
+      },
+      "setIdx": 1,
+      "setId": 5,
+      "iconIdx": 80
+    },
+    {
+      "icon": {
+        "paths": [
+          "M669.143 172l-303.429 303.429 303.429 303.429c14.286 14.286 14.286 37.143 0 51.429l-94.857 94.857c-14.286 14.286-37.143 14.286-51.429 0l-424-424c-14.286-14.286-14.286-37.143 0-51.429l424-424c14.286-14.286 37.143-14.286 51.429 0l94.857 94.857c14.286 14.286 14.286 37.143 0 51.429z"
+        ],
+        "width": 768,
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "chevron-left"
+        ],
+        "defaultCode": 61523,
+        "grid": 14
+      },
+      "attrs": [],
+      "properties": {
+        "name": "chevron-left",
+        "id": 82,
+        "order": 12,
+        "prevSize": 28,
+        "code": 61523
+      },
+      "setIdx": 1,
+      "setId": 5,
+      "iconIdx": 82
+    },
+    {
+      "icon": {
+        "paths": [
+          "M632.571 501.143l-424 424c-14.286 14.286-37.143 14.286-51.429 0l-94.857-94.857c-14.286-14.286-14.286-37.143 0-51.429l303.429-303.429-303.429-303.429c-14.286-14.286-14.286-37.143 0-51.429l94.857-94.857c14.286-14.286 37.143-14.286 51.429 0l424 424c14.286 14.286 14.286 37.143 0 51.429z"
+        ],
+        "width": 694.8571428571428,
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "chevron-right"
+        ],
+        "defaultCode": 61524,
+        "grid": 14
+      },
+      "attrs": [],
+      "properties": {
+        "name": "chevron-right",
+        "id": 83,
+        "order": 13,
+        "prevSize": 28,
+        "code": 61524
+      },
+      "setIdx": 1,
+      "setId": 5,
+      "iconIdx": 83
+    },
+    {
+      "icon": {
+        "paths": [
+          "M192 128l640 384-640 384z"
+        ],
+        "tags": [
+          "play",
+          "player"
+        ],
+        "defaultCode": 59932,
+        "grid": 16,
+        "attrs": []
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "play3, player8",
+        "name": "play3",
+        "order": 16,
+        "id": 285,
+        "prevSize": 32,
+        "code": 59932
+      },
+      "setIdx": 5,
+      "setId": 1,
+      "iconIdx": 285
+    },
+    {
+      "icon": {
+        "paths": [
+          "M256 896v-768h128v352l320-320v704l-320-320v352z"
+        ],
+        "tags": [
+          "previous",
+          "player"
+        ],
+        "defaultCode": 59939,
+        "grid": 16,
+        "attrs": []
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "previous2, player15",
+        "name": "previous2",
+        "order": 14,
+        "id": 292,
+        "prevSize": 32,
+        "code": 59939
+      },
+      "setIdx": 5,
+      "setId": 1,
+      "iconIdx": 292
+    },
+    {
+      "icon": {
+        "paths": [
+          "M768 128v768h-128v-352l-320 320v-704l320 320v-352z"
+        ],
+        "tags": [
+          "next",
+          "player"
+        ],
+        "defaultCode": 59940,
+        "grid": 16,
+        "attrs": []
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "next2, player16",
+        "name": "next2",
+        "order": 15,
+        "id": 293,
+        "prevSize": 32,
+        "code": 59940
+      },
+      "setIdx": 5,
+      "setId": 1,
+      "iconIdx": 293
+    },
+    {
+      "icon": {
+        "paths": [
+          "M256 640c0 0 58.824-192 384-192v192l384-256-384-256v192c-256 0-384 159.672-384 320zM704 768h-576v-384h125.876c10.094-11.918 20.912-23.334 32.488-34.18 43.964-41.19 96.562-72.652 156.114-93.82h-442.478v640h832v-268.624l-128 85.334v55.29z"
+        ],
+        "tags": [
+          "share",
+          "out",
+          "external",
+          "outside"
+        ],
+        "defaultCode": 60029,
+        "grid": 16,
+        "attrs": []
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "share, out",
+        "name": "share",
+        "order": 2,
+        "id": 382,
+        "prevSize": 32,
+        "code": 60029
+      },
+      "setIdx": 5,
+      "setId": 1,
+      "iconIdx": 382
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "icomoon"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon"
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16
+  }
+}
