@@ -1,0 +1,8 @@
+{
+    "id": "w2", 
+    "url": "./server/media/The Lazy Song.mp3", 
+    "img_src": "./server/img/The Lazy Song.jpg", 
+    "author": "Bruno Mars", 
+    "title": "The Lazy Song",
+    "album":"Doo-Wops"
+}

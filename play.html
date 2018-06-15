@@ -47,15 +47,14 @@
     </div>
     <div class="footer">
         <ul>
-            <a href="#">
+
                 <li class="left icon-previous2"></li>
-            </a>
-            <a href="#">
+
                 <li class="play icon-play3"></li>
-            </a>
-            <a href="#">
+
+
                 <li class="right icon-next2"></li>
-            </a>
+
         </ul>
     </div>
     <div class="musicList">
@@ -92,14 +91,16 @@
                 }
         }
     }   
-    var listId=UrlSearch()["listId"]; // 第一个参数listId,代表歌单号
-    var musicId=UrlSearch()["musicId"]; // 第二个参数misicId,代表歌曲序号
+    UrlSearch();
 
-    // console.log(document.getElementsByClassName("play_section")[0])
+    // 第一个参数listId,代表歌单号 第二个参数misicId,代表歌曲序号
+    console.log("listId:"+listId+" musicId:"+musicId)
+    
+    console.log(document.getElementsByClassName("play_section")[0])
     var oMusic = new musicFn({
         $mode:$(".play_section")[0],  //总框架play_section
-        listIndex:1,                  //歌单序号
-        musicIndex:1,                 //歌曲序号
+        listIndex:listId,                  //歌单序号
+        musicIndex:musicId,                 //歌曲序号
 
         circle: document.getElementsByClassName('circle')[0],       
         leftArrow: document.getElementsByClassName('left')[0], 

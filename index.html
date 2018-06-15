@@ -69,32 +69,42 @@
                 <ul>
                     <li>
                         <div class="list-wrapper list-wrapper-music">
-                            <span wcid="0">推荐<strong class="icon-chevron-thin-right icon-my"></strong></span>
+                            <span wcid="1">推荐<strong class="icon-chevron-thin-right icon-my"></strong></span>
+                            <div class="list-music"></div>
+                            <div class="list-music"></div>
                         </div>
                     </li>
                     <li>
                         <div class="list-wrapper list-wrapper-music">
-                            <span wcid="1">华语<strong class="icon-chevron-thin-right icon-my"></strong></span>
+                            <span wcid="2">华语<strong class="icon-chevron-thin-right icon-my"></strong></span>
+                            <div class="list-music"></div>
+                            <div class="list-music"></div>
                         </div>
                     </li>
                     <li>
                         <div class="list-wrapper list-wrapper-music">
-                            <span wcid="2">欧美<strong class="icon-chevron-thin-right icon-my"></strong></span>
+                            <span wcid="3">欧美<strong class="icon-chevron-thin-right icon-my"></strong></span>
+                            <div class="list-music"></div>
+                            <div class="list-music"></div>
                         </div>
                     </li>
                     <li>
                         <div class="list-wrapper list-wrapper-music">
-                            <span wcid="3">韩国<strong class="icon-chevron-thin-right icon-my"></strong></span>
+                            <span wcid="4">韩国<strong class="icon-chevron-thin-right icon-my"></strong></span>
+                            <div class="list-music"></div>
+                            <div class="list-music"></div>
                         </div>
                     </li>
                     <li>
                         <div class="list-wrapper list-wrapper-music">
-                            <span wcid="4">日本<strong class="icon-chevron-thin-right icon-my"></strong></span>
+                            <span wcid="5">日本<strong class="icon-chevron-thin-right icon-my"></strong></span>
+                            <div class="list-music"></div>
+                            <div class="list-music"></div>
                         </div>
                     </li>
                     <li>
                         <div class="list-wrapper">
-                            <span wcid="4">精选专栏<strong class="icon-chevron-thin-right icon-my"></strong></span>
+                            <span wcid="5">精选专栏<strong class="icon-chevron-thin-right icon-my"></strong></span>
                             <div class="list-article">
                                 <a href="">
                                     <div class="content">
@@ -138,7 +148,10 @@
     <script src="./assets/js/swiper-4.2.6.min.js"></script>
     <script src="./assets/js/jquery-1.10.2.js"></script>
     <script src="./assets/js/index.js"></script>
+    <!-- <script src="./assets/js/listOption.js"></script> -->
     <script>
+
+
         //轮播图
         var mySwiper = new Swiper('.swiper-container', {
             loop: true,
@@ -152,23 +165,23 @@
 
         // 页面加载
         var oLoading = new indexLoading({
-            $wrapperList: $('.list > ul > li .list-wrapper-music'),
+            $wrapperList: $('.list > ul > li .list-music'),
             callback(){
 
             }
         })
         oLoading.install();
-
+        
         //列表页面跳转及传参
         $(function(){
             // console.log($(".list > ul > li .list-wrapper"))
-            var listId=0;
+            var listId=1;
             $(".list > ul > li .list-wrapper").on("click", "span", function(){
                 listId=$(this).attr('wcid');
                 listJump();
             });
             function listJump(){
-                url = "list.html?list="+listId;
+                url = "list.html?listId="+listId;
                 window.location.href = url;
             }
         });
@@ -178,14 +191,16 @@
             // console.log(9)
             // console.log($(".list > ul > li .list-music"))
             var musicId=0;
+            var listId=1;
             $(".list > ul > li .list-music").on("click", "a", function(ev){
                 ev.preventDefault();
                 musicId=$(this).attr('musicid');
-                console.log(musicId)
+                listId=$(this).parent().parent().children('span').attr('wcid');
+                console.log("lid:"+listId)
                 playJump();
             });
             function playJump(){
-                url = "play.html?listId="+ 1 +"&musicId="+musicId;
+                url = "play.html?listId="+ listId +"&musicId="+musicId;
                 window.location.href = url;
             }
         }

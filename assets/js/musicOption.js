@@ -47,6 +47,14 @@ var musicFn=(function($,undefined){
         install: function(){ 
             console.log(this.$mode);
             this.getMusic();
+
+            
+            
+
+        },
+
+        displayAll:function (data) {
+            this.data=data;
             this.disPlayMusic(this.data);
             this.bindPlay();
             this.bindLeft();
@@ -54,14 +62,23 @@ var musicFn=(function($,undefined){
             this.musicOn();
             this.bindLine();
             this.bindRound();
-            
-            
 
         },
 
+        clearAll:function () {
+            clearInterval(this.timer);
+            clearInterval(this.playTimer);
+            this.oAudio=null;
+            $(this.play).off('click');
+            $(this.leftArrow).off('click')
+            $(this.rightArrow).off('click')
+            $(this.line).off()
+            $(this.round).off();
+
+        },
         //布置音乐函数，动态添加css
         disPlayMusic:function(data){
-            _this=this;
+            var _this=this;
             var strhead="<h4>"+this.data.title+"</h4><h5>"+this.data.author+"</h5>"
             var img=new Image();
             img.src=this.data.img_src;
@@ -103,23 +120,24 @@ var musicFn=(function($,undefined){
 
         //根据歌单和音乐号从php歌单中取得歌曲id，并根据歌曲id从歌曲json中取得相应歌曲的data，保存入this.data中
         getMusic:function(){ //还未经过测试，有服务器的可以把代码放到服务器下测试，有问题告诉我
-            _this=this;
+            var _this=this;
             $.ajax({
                 type:'GET',
-                url:'../php/musicList1.php',
+                url:'./assets/json/list/'+_this.listIndex+'.json',
                 cache:false,
-                data:{
-                    musicIndex:_this.musicIndex,
-                },
+
                 dataType:'json',
             }).done(function(data){
 
-                this.length=data.length;
-                if(data.err == 1){
-                    _this.data= _this.searchMusic(data.info.id);
-                } else {
-                    alert(data.message);
+                _this.length=data.length;
+                console.log("length:"+_this.length)
+                console.log('musicIndex:'+_this.musicIndex)
+                if(_this.musicIndex>=0&&_this.musicIndex<_this.length){
+                    console.log(data["id"+_this.musicIndex])
+                    _this.searchMusic(data["id"+_this.musicIndex]);
                 }
+                else alert("传参有误");
+
             }).fail(function(err){
                 console.log(err);
             })
@@ -158,17 +176,20 @@ var musicFn=(function($,undefined){
 
         //根据歌曲id从json中获取歌曲data并返回
         searchMusic:function(id){
+            var _this=this
             $.ajax({
                 type:'GET',
-                url:'../json/music/'+id+'.json',
+                url:'./assets/json/music/'+id+'.json',
                 cache:false,
                 
                 dataType:'json',
             }).done(function(data){
-                return data;
+                console.log(data)
+                
+                _this.displayAll(data)
 
             }).fail(function(err){
-
+                console.log(err);
             });
         },
 
@@ -254,11 +275,12 @@ var musicFn=(function($,undefined){
             //  })
 
             var _this=this;
-            this.line.onclick=function(ev){
+            this.line.onmouseup=function(ev){
                 if(ev.target.className=="round") return
                 _this.oAudio.currentTime=_this.oAudio.duration*(ev.clientX-this.offsetLeft)/(this.clientWidth);
                 // _this.round.style.left=(_this.oAudio.currentTime/_this.oAudio.duration)*(_this.line.clientWidth - _this.round.offsetWidth)+"px"
             
+                if(_this.flag ==0 ) _this.musicOn();
             }
         },
         
@@ -305,6 +327,8 @@ var musicFn=(function($,undefined){
                     document.ontouchend = null;
                     objThis.setPlayTimer();
                     objThis.oAudio.currentTime=objThis.oAudio.duration*l/(objThis.line.clientWidth - _this.offsetWidth);
+                    
+                    if(objThis.flag ==0 ) objThis.musicOn();
                 }
                 //解决字体能被选中
                 return false;
@@ -331,24 +355,22 @@ var musicFn=(function($,undefined){
         //左切歌
         moveLeft:function(){
             // if(--this.musicIndex<=0) this.musicIndex=3;
-            if(--this.musicIndex<=0) this.musicIndex=this.length;
-            clearInterval(this.timer);
-            clearInterval(this.playTimer);
+            // console.log("length:"+this.length)
+            if(--this.musicIndex<0) this.musicIndex=this.length-1;
+            this.clearAll()
             this.getMusic();
-            this.disPlayMusic(this.data);
-            this.musicOn();
-            
+
+            // window.location.href='./play.html?listId='+this.listIndex+'&musicId='+this.musicIndex;
             
 
         },
         moveRight:function(){
             // if(++this.musicIndex>3) this.musicIndex=1;
-            if(++this.musicIndex>this.length) this.musicIndex=1;
-            clearInterval(this.timer);
-            clearInterval(this.playTimer);
+            if(++this.musicIndex>=this.length) this.musicIndex=0;
+            this.clearAll()
             this.getMusic();
-            this.disPlayMusic(this.data);
-            this.musicOn();
+            // window.location.href='./play.html?listId='+this.listIndex+'&musicId='+this.musicIndex;
+          
             
 
         },

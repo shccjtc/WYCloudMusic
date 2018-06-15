@@ -1,8 +1,8 @@
 {
     "id": "1", 
-    "url": "./server/media/成都.mp3", 
-    "img_src": "./server/img/pic-01.jpg", 
-    "author": "赵雷", 
-    "title": "成都",
-    "album":"空"
+    "url": "./server/media/乱舞春秋.flac", 
+    "img_src": "./server/img/pic-03.jpg", 
+    "author": "周杰伦", 
+    "title": "乱舞春秋",
+    "album":"七里香"
 }

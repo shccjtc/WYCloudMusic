@@ -1,39 +1,154 @@
+.zm-header{
+    background: rgb(212, 62, 51);
+    height: 1rem;
+    position: relative;
+    
+}
+.zm-header h4{
+    line-height: 1rem;
+    text-indent: .7rem;
+    font-family: '时尚中黑简体';
+    font-size: .4rem;
+    color: rgb(255, 255, 255);
+}
 html {
     height: 100%;
-}
-/* 项目下所有的容器都用怪异和模型处理 */
-html * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-body {
-    /* 针对 body 重新修正下 font-size */
-    font-size: 16px;
-    font-family: STHeiti,Microsoft YaHei,Helvetica,Arial,sans-serif;
-    color: #333;
-    min-width: 320px;
-    overflow-x: hidden;
-    height: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a, a:hover {
     color: #333;
     text-decoration: none;
 }
-img {
-    display: block;
+.zm-header .lnr-chevron-left {
+    font-size: 24px;
+    color: aliceblue;
+    position: absolute;
+    left: .17rem;
+    line-height: 1rem;
 }
-.clearfix::after {
-    content: '';
-    display: block;
-    clear: both;
+.zm-header .lnr-menu{
+    font-size: 24px;
+    color: aliceblue;
+    position: absolute;
+    right: .17rem;
+    line-height: 1rem;
 }
-.fl {
+.zm-nav{
+    height: .7rem;
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+    color:#303030;
+}
+.zm-nav ul{
+    display: table;
+}
+.zm-nav ul li{
+    text-align: center;
     float: left;
+    margin-left: .8rem;
+    line-height: .7rem;
+    padding:  0 .1rem;
 }
-.fr {
-    float: right;
+.zm-nav ul li:nth-child(1){
+    margin-left: 0.4rem;
+}
+.zm-nav ul  .selected{
+    color: red;
+    border-bottom: 1px solid red;
+}
+.zm_pic img{
+    width: 100%;
+    height: 190px;
+}
+.zm_arc div {
+    border-bottom: 1px solid #ddd;
+    margin: .1rem ;
+    padding: .1rem .1rem;
+}
+.zm_arc div:nth-child(1){
+    margin-top: .1rem;
+    border-top: 1px solid #ddd;
+}
+.zm_arc div  img{
+    width: 1rem;
+}
+.zm_arc div{
+    position: relative;
+}
+.zm_arc div strong{
+    left: 1.3rem;
+    top: .2rem;
+    font-weight: 550;
+    position: absolute;
+}
+.zm_arc div p{
+    left: 1.3rem;
+    top: .8rem;
+    font-weight: 300;
+    position: absolute;
+    font-size: 10px;
+}
+.zm_arc .play{
+    font-size: 18px;
+    position: absolute;
+    left: 5.8rem;
+    top: .5rem;
+    border-bottom: none;
+}
+.zm_arc .lnr-camera-video{
+    left: 6.5rem;
 }
 
-
+html{
+    height: 100%;
+}
+html *{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: STHeiti,Microsoft YaHei,Helvetica,Arial,sans-serif;
+     color: #333;
+     min-width: 320px;
+     height: 100%;
+     overflow-x: hidden;
+     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+     tap-highlight-color: rgba(0, 0, 0, 0);
+ 
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.main{
+    flex: 1;
+    overflow-x: auto;
+}
+.footer{
+    height: 1rem;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+.footer .box{
+    font-family: Microsoft YaHei;
+    position: absolute;
+    width: 6rem;
+    height: .8rem;
+    background: rgb(212, 62, 51);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-left: 50%;
+    left: -3rem;
+    border-radius: 500px;
+    text-align: center;
+    line-height: .8rem;
+    letter-spacing: .1rem;
+    position: relative;
+}
+.footer .box img{
+    width: .5rem;
+    position: absolute;
+    margin: .1rem  -.6rem;
+}
